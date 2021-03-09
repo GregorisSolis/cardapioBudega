@@ -1,0 +1,132 @@
+body{
+    margin: 0; 
+    padding: 0; 
+    text-transform: uppercase;
+    background-color: #f8f9fa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{text-decoration: none;}
+h4{margin: 0;}
+
+.container_principal{
+    max-width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container_banner{
+    box-sizing: border-box;
+    max-width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px ){
+    .container_principal{
+        max-width: 100%;
+        height: initial;
+        overflow: scroll;
+    }
+
+    .container_banner{
+        box-sizing: border-box;
+        max-width: 100%;
+        height: 90px;
+        background-color: black;
+        display: flex;
+    }
+
+    .container_banner img{
+        width: 15%;
+        margin: auto;
+    }
+
+    .tittle_principal{
+        width: 100%;
+        text-align: center;
+        margin: 8% auto;
+    }
+
+    .container_categorias{
+        box-sizing: border-box;
+        width: 90%;
+        margin: auto;
+    }
+
+    .container_categorias img{
+        position: absolute;
+        z-index: 1;
+        box-sizing: border-box;
+        width: 90%;
+        height: 22vh;
+        border-radius: 8px;
+    }
+
+    .container_item{
+        margin: 4% auto;
+        box-shadow: 1px 1px 2px black;
+        border-radius: 10px;
+    }
+
+    .fundo_preto{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 22vh;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 8px;
+        color: transparent;
+    }
+
+    .fundo_preto:hover{
+        background-color: rgba(0, 0, 0, .7);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 38px;
+    }
+
+    .container_fotter{
+        box-sizing: border-box;
+        height: 18vh;
+        width: 100%;
+        background-color: #dee2e6;
+        padding: 6% 0;
+    }
+
+    .container_fotter a{
+        color:#212529;
+        margin: 4% auto;
+        font-size: 35px;
+    }
+    
+    .container_fotter a:hover{
+        color:#6c757d; 
+    }
+    .container_fotter h4{
+        text-align: center;
+    }
+
+    .container_fotter h5{
+        text-align: center;
+        margin: 4% auto 0 auto;
+    }
+
+    .barra_social{
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .barra_copy{
+        color:#212529;
+        text-align: center;
+    }
+}

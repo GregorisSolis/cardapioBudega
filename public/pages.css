@@ -1,0 +1,61 @@
+@media only screen and (max-width: 600px){
+    
+    .container_productos{
+        width: 95%;
+        margin: auto;
+    }
+
+    .container_items{
+        box-sizing: border-box;
+        border: 1px solid rgba(0, 0, 0, .4);
+        border-radius: 5px;
+        padding: 3%;
+        margin: 4% auto;
+        display: flex;
+    }
+    
+    .container_items h2{
+        margin: 0;
+    }
+
+    .container_items p{
+        margin: 8px;
+    }
+
+    .name_items{
+        font-size: 18px;
+    }
+
+    .container_items img{
+        height: 14vh;
+        border-radius: 5px;
+    }
+    .precio{
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .precio_A{
+        font-size: 23px;
+    }
+
+    .precio_B{
+        font-size: 16px;
+    }
+
+    .precios_pizzas{
+        padding: 3%;
+        border: 1px solid rgba(0, 0, 0, .4);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-top: none;
+        margin: -4% auto 4% auto;
+        border-radius: 5px;
+    }
+    .tittle_tamanho{
+        font-size: 16px;
+        margin: 0;
+    }
+}
