@@ -1,81 +1,42 @@
-    
-    .container_productos{
-        display: grid;
-        grid-template-columns: repeat(3, 33%);
-        width: 90%;
-        margin: 0 auto 8% auto;
-    }
-
-    .container_items{
-        box-sizing: border-box;
-        border: 1px solid rgba(0, 0, 0, .4);
-        border-radius: 5px;
-        padding: 3%;
-        margin: 3% 3% 0 3%;
-        display: flex;
-    }
-    
-    .container_items h2{
-        margin: 0;
-    }
-
-    .container_items p{
-        margin: 8px;
-    }
-
-    .name_items{
-        font-size: 18px;
-    }
-
-    .container_items img{
-        height: 14vh;
-        border-radius: 5px;
-    }
-    .precio{
-        display: flex;
-        align-items: center;
-        font-weight: bold;
-        margin: 12% 0 0 0;
-    }
-
-    .precio_A{
-        font-size: 23px;
-    }
-
-    .precio_B{
-        font-size: 16px;
-    }
-
-    .precios_pizzas{
-        padding: 3%;
-        border: 1px solid rgba(0, 0, 0, .4);
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0 3%;
-        border-top: none;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-    }
-    .tittle_tamanho{
-        font-size: 16px;
-        margin: 0;
-    }
+/*ESTILOS GENERALES*/
 
 
-    @media only screen and (max-width: 720px){
-        .container_productos{
-            display: block;
-            width: 95%;
-            margin: 0 auto 8% auto;
-        }
-    }
+/*ESTILOS PAGES BURGER*/
 
-/*estilos para la pagina de PIZZAS*/
-
-.container_productos-pizza{
+.container_productos-burger{
     display: grid;
-    grid-template-columns: repeat(3,33%);
+    grid-template-columns: repeat(3, 33%);
     width: 90%;
-    margin: 5%;
+    margin: 0 auto 8% auto;
 }
+
+.container_items-burger{
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, .4);
+    border-radius: 5px;
+    padding: 3%;
+    margin: 3% 3% 0 3%;
+    display: flex;
+    overflow: hidden;
+}
+
+.container_items-burger .img_items img{height: 14vh; border-radius: 5px;}
+
+.container_items-burger h2,
+.container_items-burger p
+{margin: 5px 0;}
+
+.precio{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin: 8% 0 0 0;
+}
+
+.container_items-burger .precio_A{font-size: 23px;}
+
+.container_items-burger .precio_B{ font-size: 16px;}
+
+/*ESTILOS PAGES PIZZA*/
+/*ESTILOS PAGES PORCOES*/
+/*ESTILOS PAGES SUSHI*/
