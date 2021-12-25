@@ -1,14 +1,32 @@
 /*ESTILOS GENERALES*/
 
-
-/*ESTILOS PAGES BURGER*/
-
-.container_productos-burger{
+.container_productos-pizza,
+.container_productos-burger,
+.container_productos-porcoes,
+.container_productos-sushi{
     display: grid;
     grid-template-columns: repeat(3, 33%);
     width: 90%;
-    margin: 0 auto 8% auto;
+    margin: 2% auto 5% auto;
 }
+
+.container_productos-pizza .precio,
+.container_productos-burger .precio,
+.container_productos-porcoes .precio,
+.container_productos-sushi .precio,
+.precio_sushi{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin: 8% 0 0 0;
+    text-transform: uppercase;
+}
+
+.precio h2{margin: 0;}
+
+.descripcao{margin: 5px;}
+
+/*ESTILOS PAGES BURGER*/
 
 .container_items-burger{
     box-sizing: border-box;
@@ -20,23 +38,165 @@
     overflow: hidden;
 }
 
+.container_items-burger .name_items{margin: 0;}
+
 .container_items-burger .img_items img{height: 14vh; border-radius: 5px;}
 
-.container_items-burger h2,
-.container_items-burger p
-{margin: 5px 0;}
+.container_items-burger .precio_A{font-size: 1.6rem;}
 
-.precio{
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    margin: 8% 0 0 0;
+.container_items-burger .precio_B{ font-size: 1rem;}
+
+@media only screen and (max-width: 720px){
+    .container_productos-burger{
+        display: block;
+        width: 98%;
+    }
 }
 
-.container_items-burger .precio_A{font-size: 23px;}
-
-.container_items-burger .precio_B{ font-size: 16px;}
-
 /*ESTILOS PAGES PIZZA*/
+
+.content_pizza{
+    overflow: hidden;
+    width: 95%;
+    margin: 2%;
+}
+
+.container_items-pizza{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 4%;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, .4);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.content_pizza .img_items{
+    width: 180px;
+    height: 85px;
+    overflow: hidden;
+}
+
+.content_pizza .img_items img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.precios_pizzas{
+    padding: 3%;
+    border: 1px solid rgba(0, 0, 0, .4);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.container_precio_items{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .4);
+    border-top: none;
+    border-bottom: none;
+}
+
+.container_productos-pizza .precio{justify-content: center;}
+
+.content_pizza .tittle_tamanho{margin: 0; font-size: 1rem; text-align: center;}
+.content_pizza .precio_B{font-size: 1rem;}
+
+@media only screen and (max-width: 999px){
+    .container_productos-pizza{
+        width: 98%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    .container_productos-pizza{display: block; width: 98%;}
+
+    .content_pizza{margin: 5% auto;}
+}
+
 /*ESTILOS PAGES PORCOES*/
+
+.content_porcoes{
+    overflow: hidden;
+    width: 96%;
+    margin: 2%;
+    border: 1px solid rgba(0, 0, 0, .4);
+    border-radius: 5px;
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+.container_items-porcoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container_items-porcoes .img_items{
+    width: 120px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.container_items-porcoes .img_items img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.container_items-porcoes .name_items{font-size: 1.1rem; margin: 0;}
+.precios_porcoe h2{text-align: center;}
+
+.precios_porcoe .precio .precio_B{font-size: 1rem;}
+
+@media only screen and (max-width: 720px){
+    .container_productos-porcoes{display: block;}
+
+    .content_porcoes{margin: 5% auto;}
+}
+
 /*ESTILOS PAGES SUSHI*/
+
+.container_items-sushi{
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    width: 90%;
+    border: 1px solid rgba(0, 0, 0, .4);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 2% auto;
+}
+
+.container_items-sushi .descripcao{width: 100%;}
+
+.container_items-sushi .descripcao p{ margin: 6px 0;}
+
+.container_items-sushi .img_items{
+    width: 120px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.container_items-sushi .img_items img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.container_items-sushi .name_items{font-size: 1.1rem; margin: 0;}
+
+.precio_sushi .precio_B{font-size: 1rem;}
+
+.precio_sushi .precio_B,.precio_sushi .precio_A{margin: 0;}
+
+@media only screen and (max-width: 720px){
+    .container_productos-sushi{display: block; width: 98%;}
+
+    .container_items-sushi{margin: 5% auto;}
+}

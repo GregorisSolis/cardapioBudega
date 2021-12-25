@@ -27,27 +27,39 @@ body,
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    margin: 4% auto;
+    margin: 3% auto;
 }
 
 .container_categorias{
-    display: grid;
-    grid-template-columns: repeat(4,25%);
-    grid-template-rows: 58vh;
-    margin: 1% auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    margin: 5% auto 14% auto;
 }
 
 .container_item{
-    position: relative;
+    display: flex;
+    width: 320px;
+    height: 250px;
     overflow: hidden;
-    width: 92%;
-    height: 82%;
-    margin: 4%;
-    border-radius: 24px;
+    margin: 1%;
+    border-radius: 8px;
+    position: relative;
 }
 
-.container_item:hover{
-    box-shadow: 1px 1px 1px 1px black;
+.container_item:hover > .fundo_preto{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    background-color: rgb(0, 0, 0, .6);
 }
 
 .container_item img{
@@ -56,59 +68,35 @@ body,
     position: absolute;
 }
 
-.fundo_preto{opacity: 0; position: absolute; width: 100%; height: 100%;}
-
-.container_item:hover > .fundo_preto{
-  background-color: rgba(0,0,0, .4);
-  color: #fff;
-  font-size: 2.4em;
-  opacity: 1;
-  font-weight: bold;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .container_fotter{
     background-color: black;
+    height: 160px;
+    width: 100%;
     color: #fff;
     text-align: center;
-    margin: 0;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    height: 24vh;
-    overflow: hidden;
-  }
-
-  .container_fotter a{
-      color: #fff;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 2.1rem;
-      margin: 0 2%;
-  }
-
-.container_fotter h4{
-    margin: 1% 0 2% 0;
+    box-sizing: border-box;
+    padding: 1% 0 0 0;
 }
 
-.barra_copy h5{
-    margin: 3% 0;
+.barra_social a{
+    font-size: 2rem;
+    color:#fff;
+    text-decoration:none ;
+    margin: 1%;
 }
+
+.container_fotter h4{margin: 1% 0;}
+.container_fotter h5{margin: 3% 0 0 0;}
 
 @media only screen and (max-width: 720px){
+
     .container_categorias{
-       display: grid;
-       grid-template-columns: 80%;
-       grid-template-rows: repeat(4, 320px);
-       margin: 6% auto 8% auto;
+        display: block;
+        width: 95%;
     }
 
     .container_item{
-        width: 100%;
-        height: 300px;
-        margin:0% 12%;
+        margin: 6% auto;
     }
+
 }
