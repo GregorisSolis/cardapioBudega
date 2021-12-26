@@ -88,15 +88,27 @@ body,
 .container_fotter h4{margin: 1% 0;}
 .container_fotter h5{margin: 3% 0 0 0;}
 
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 999px){
 
     .container_categorias{
-        display: block;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
         width: 95%;
     }
 
-    .container_item{
-        margin: 6% auto;
-    }
+    .barra_social{margin: 3% 0;}
+    .container_item{margin: 6% auto;}
+    .container_fotter{height: 140px;}
+    .container_fotter h4{margin:0;}
+
+}
+
+@media only screen and (max-width: 720px){
+
+    .container_categorias{display: block; width: 95%;}
+    .barra_social{margin: 0 0 6% 0;}
+    .container_item{margin: 6% auto;}
+    .container_fotter{height: 140px;}
+    .container_fotter h4{margin: 2% 0 4% 0;}
 
 }

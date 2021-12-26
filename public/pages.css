@@ -24,7 +24,7 @@
 
 .precio h2{margin: 0;}
 
-.descripcao{margin: 5px;}
+.line{border-right: 1px solid rgba(0, 0, 0, .4);}
 
 /*ESTILOS PAGES BURGER*/
 
@@ -38,19 +38,25 @@
     overflow: hidden;
 }
 
+.container_items-burger .descripcao{margin:  5px}
 .container_items-burger .name_items{margin: 0;}
-
 .container_items-burger .img_items img{height: 14vh; border-radius: 5px;}
-
 .container_items-burger .precio_A{font-size: 1.6rem;}
-
 .container_items-burger .precio_B{ font-size: 1rem;}
 
+@media only screen and (max-width: 999px){
+    .container_productos-burger{display: block; width: 98%;}
+    .container_items-burger .name_items,
+    .container_items-burger .precio_A{font-size: 2rem;}
+    .container_items-burger .precio_B{ font-size: 1.8rem;}
+    .container_items-burger .descripcao{font: 1rem;}
+}
+
 @media only screen and (max-width: 720px){
-    .container_productos-burger{
-        display: block;
-        width: 98%;
-    }
+    .container_items-burger .name_items,
+    .container_items-burger .precio_A{font-size: 1.6rem;}
+    .container_items-burger .precio_B{ font-size: 1.1rem;}
+    .container_items-burger .descripcao{font: 1rem;}
 }
 
 /*ESTILOS PAGES PIZZA*/
@@ -64,12 +70,13 @@
 .container_items-pizza{
     display: flex;
     justify-content: space-around;
-    padding: 0 4%;
-    align-items: center;
+    padding: 4%;
     border: 1px solid rgba(0, 0, 0, .4);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+
+.content_pizza .name_items{margin: 0}
 
 .content_pizza .img_items{
     width: 180px;
@@ -94,29 +101,33 @@
     border-bottom-right-radius: 5px;
 }
 
-.container_precio_items{
-    width: 100%;
-    border: 1px solid rgba(0, 0, 0, .4);
-    border-top: none;
-    border-bottom: none;
-}
-
+.container_precio_items{width: 100%;}
 .container_productos-pizza .precio{justify-content: center;}
-
 .content_pizza .tittle_tamanho{margin: 0; font-size: 1rem; text-align: center;}
 .content_pizza .precio_B{font-size: 1rem;}
 
 @media only screen and (max-width: 999px){
     .container_productos-pizza{
+        display: block; width: 98%;
         width: 98%;
         margin: auto;
     }
+    .content_pizza{margin: 5% auto;}
+    .content_pizza .descripcao p{font-size: 1.5rem;}
+    .content_pizza .tittle_tamanho{font-size: 2rem}
+    .content_pizza .name_items,
+    .content_pizza .precio_A{font-size: 2.1rem;}
+    .content_pizza .precio_B{font-size: 1.8rem;}
+    .content_pizza .img_items{ width: 240px; height: 135px;}
 }
 
 @media only screen and (max-width: 720px){
-    .container_productos-pizza{display: block; width: 98%;}
-
-    .content_pizza{margin: 5% auto;}
+    .content_pizza .descripcao p{font-size: .9rem;}
+    .content_pizza .tittle_tamanho{font-size: 1.2rem}
+    .content_pizza .name_items,
+    .content_pizza .precio_A{font-size: 1.2rem;}
+    .content_pizza .precio_B{font-size: .9rem;}
+    .content_pizza .img_items{width: 190px;height: 90px;}
 }
 
 /*ESTILOS PAGES PORCOES*/
@@ -130,6 +141,8 @@
     padding: 3%;
     box-sizing: border-box;
 }
+
+.content_porcoes .descripcao{margin:  5px}
 
 .container_items-porcoes{
     display: flex;
@@ -151,13 +164,24 @@
 
 .container_items-porcoes .name_items{font-size: 1.1rem; margin: 0;}
 .precios_porcoe h2{text-align: center;}
-
 .precios_porcoe .precio .precio_B{font-size: 1rem;}
 
-@media only screen and (max-width: 720px){
-    .container_productos-porcoes{display: block;}
+@media only screen and (max-width: 999px){
 
+    .container_productos-porcoes{display: block;}
+    .container_items-porcoes .name_items{font-size: 1.9rem;}
     .content_porcoes{margin: 5% auto;}
+    .container_items-porcoes .img_items{width: 170px;height:130px;}
+    .precios_porcoe .precio .precio_A{font-size: 2.5rem;}
+    .precios_porcoe .precio .precio_B{font-size: 1.8rem;}
+}
+
+@media only screen and (max-width: 720px){
+
+    .container_items-porcoes .name_items{font-size: 1.1rem;}
+    .container_items-porcoes .img_items{width: 150px;height:100px;}
+    .precios_porcoe .precio .precio_A{font-size: 1.4rem;}
+    .precios_porcoe .precio .precio_B{font-size: 1rem;}
 }
 
 /*ESTILOS PAGES SUSHI*/
@@ -189,14 +213,30 @@
     border-radius: 5px;
 }
 
-.container_items-sushi .name_items{font-size: 1.1rem; margin: 0;}
-
+.container_items-sushi .name_items{margin: 0;}
 .precio_sushi .precio_B{font-size: 1rem;}
-
 .precio_sushi .precio_B,.precio_sushi .precio_A{margin: 0;}
+.precio_sushi .precio_A{font-size: 1.6rem;}
+
+@media only screen and (max-width: 999px){
+
+    .container_productos-sushi{display: block; width: 98%;}
+    .container_items-sushi{margin: 5% auto;}
+
+    .container_items-sushi .img_items{ width: 200px;height: 160px;}
+
+    .container_items-sushi .name_items{font-size: 2rem;}
+    .container_items-sushi .descripcao p{font-size: 1.4rem; margin: 5% 5px;}
+    .precio_sushi .precio_B{font-size: 1.6rem;}
+    .precio_sushi .precio_A{font-size: 2.4rem;}
+}
+
 
 @media only screen and (max-width: 720px){
-    .container_productos-sushi{display: block; width: 98%;}
 
-    .container_items-sushi{margin: 5% auto;}
+    .container_items-sushi .img_items{width: 130px;height: 90px;}
+    .container_items-sushi .name_items{font-size: 1.2rem;}
+    .container_items-sushi .descripcao p{font-size: 1rem;}
+    .precio_sushi .precio_A{font-size: 1.4rem;}
+    .precio_sushi .precio_B{font-size: .9rem;}
 }
