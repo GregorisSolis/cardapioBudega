@@ -27,8 +27,11 @@ body,
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    margin: 12% auto;
+    margin: 3% auto 4% auto;
 }
+
+.tittle_principal h2{font-size: 2.6rem;}
+.tittle_principal h5{font-size: 1.2rem;}
 
 .container_categorias{
     display: flex;
@@ -101,6 +104,16 @@ body,
     .container_fotter{height: 140px;}
     .container_fotter h4{margin:0;}
 
+    .tittle_principal{
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 8% auto;
+    }
+
+    .tittle_principal h2{font-size: 2.9rem;}
+    .tittle_principal h5{font-size: 1.5rem;}
+        
 }
 
 @media only screen and (max-width: 720px){
@@ -111,4 +124,6 @@ body,
     .container_fotter{height: 140px;}
     .container_fotter h4{margin: 2% 0 4% 0;}
 
+    .tittle_principal h2{font-size: 2.1rem;}
+    .tittle_principal h5{font-size: 1rem;}
 }
